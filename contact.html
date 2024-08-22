@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="../css/contact.css">
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <a href="index.html">
+                <img src="logo.jpg" alt="logo" class="logo">
+            </a>
+        </div>
+
+
+        <input type="checkbox" class="toggle-menu" id="burger">
+        <label for="burger">
+            <div class="hamburger" for="burger"></div>
+        </label>
+        <div class="head">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="products.html" class="nav-link">Products</a>
+            <a href="about.html" class="nav-link">About Us</a>
+            <a href="contact.html" class="nav-link">Contact Us</a>
+            <a href="Broucher.pdf" class="nav-link" target="_blank" download="Broucher.pdf">Download Broucher</a>
+        </div>
+    </nav>
+    <section class="contact">
+        <div class="content">
+            <h2>Contact Us</h2>
+            <p>At Renuka Graphics, we are dedicated to bringing your vision to life with top-quality graphics design and
+                printing services. Whether you have a question, need a quote, or want to discuss your next project, we
+                are here to help!</p>
+        </div>
+        <div class="container">
+            <div class="contactinfo">
+                <div class="box">
+                    <div class="icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+
+                    <div class="text">
+                        <h3>Our Location</h3>
+                        <p>Regd. Office: D-234, 1st Floor, Sector-10, Noida-201301 (U.P.)<br>
+                            Branch Office: Shop No.1, VS Palace, Ground Floor, Behind Vinayak Hospital</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                    <div class="text">
+                        <h3>Phone</h3>
+                        <p>9911322519, 7256925504</p>
+                        <h3>Business Hours: </h3>
+                        <p>Monday to Friday: 9:00 AM - 09:00 PM</p>
+                        <p>Saturday: 10:00 AM - 09:00 PM</p>
+                        <p>Sunday: Open</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="text">
+                        <h3>Email</h3>
+                        <p><a href="mailto:sales@renukagraphic.com" style="color: white;">sales@renukagraphic.com</a>
+                        </p>
+                    </div>
+                    <!-- <div class="time">
+                        <h3>Business Hours: </h3>
+                        <p>Monday to Friday: 9:00 AM - 09:00 PM</p>
+                        <p>Saturday: 10:00 AM - 09:00 PM</p>
+                        <p>Sunday: Open</p>
+                    </div> -->
+                </div>
+            </div>
+            <div class="contactform">
+                <form id="myForm" action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="fafb0d37-8bfe-4d44-99be-104a858c90e7">
+                    <h2>Send Message</h2>
+                    <div class="inputbox">
+                        <input type="text" name="Full Name" required="required">
+                        <span>Full Name</span>
+                    </div>
+
+                    <div class="inputbox">
+                        <input type="text" name="Email" required="required">
+                        <span>Email</span>
+                    </div>
+                    <div class="inputbox">
+                        <select name="Products">
+                            <option value="" disabled selected>Select any Product</option>
+                            <option value="Woven Label">Woven Label</option>
+                            <option value="Calender">Calender</option>
+                            <option value="Certificate">Certificate</option>
+                            <option value="Flyer">Flyer</option>
+                            <option value="Hangtag">Hangtag</option>
+                            <option value="Header Card">Header Card</option>
+                            <option value="Heat Transfer Sticker">Heat Transfer Sticker</option>
+                            <option value="ID Cards">ID Cards</option>
+                            <option value="Packaging Box">Packaging Box</option>
+                            <option value="Paper Stickers">Paper Stickers</option>
+                            <option value="Poster">Poster</option>
+                            <option value="Printed Label">Printed Label</option>
+                            <option value="Tagseal">Tagseal</option>
+                        </select>
+
+                    </div>
+                    <div class="inputbox">
+                        <input type="text" name="Contact" required="required">
+                        <span>Phone</span>
+                        <div class="inputbox">
+                            <textarea required="required"></textarea>
+                            <span>Type your Message...</span>
+                        </div>
+                        <div class="inputbox">
+                            <input type="submit" value="Send">
+                        </div>
+                        <div id="thankYouMessage" style="display: none;">Thank you for your message! We Will Contact You
+                            Shortly</div>
+
+                    </div>
+            </div>
+            </form>
+
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="logo-container">
+                    <img class="footerlogo" src="logo.jpg" alt="logo">
+                    <p>Renuka Graphics is the leading corporate clothing, gifting branding and Printing solutions
+                        provider in India and well-known for transforming the businesses into 'brands'.</p>
+                </div>
+                <div class="Links">
+                    <h5>Links</h5>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <!-- <li><a href="#">About Us</a></li> -->
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="contacts">
+                    <h5>Contact Us</h5>
+                    <br>
+                    Regd. Office : D-234, 1st Floor,Sector-10, Noida-201301 (U.P.)<br>
+                    Branch Office : Shop No.1, VS Palace, Ground Floor, Behind Vinayak Hospital
+                    </p>
+                    <p>Phone:: 0120-4331262 <br>
+                        Mobile: 9911322519, 7256925504<br>
+                        Email Id: <a href="mailto:sales@renukagraphic.com ">sales@renukagraphic.com </a></p>
+                </div>
+            </div>
+
+            <!-- <div class="row">
+                <div class="col-md-12 text-center">
+                    <p class="copyright">Copyright &copy; 2024 Renuka Graphics</p>
+                </div>
+            </div> -->
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('myForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            fetch('https://api.web3forms.com/submit', {
+                method: 'POST',
+                body: new FormData(e.target),
+                headers: {
+                    'Accept': 'application/json'
+                }
+            }).then(response => {
+                if (response.ok) {
+                    return response.json();
+                } else {
+                    throw new Error('Network response was not ok.');
+                }
+            }).then(data => {
+                document.getElementById('thankYouMessage').style.display = 'block';
+                e.target.reset(); // clear the form
+            }).catch(error => {
+                console.error('There has been a problem with your fetch operation:', error);
+            });
+        });
+    </script>
+</body>
+
+</html>

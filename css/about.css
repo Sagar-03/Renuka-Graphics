@@ -1,0 +1,218 @@
+/* Base styles */
+.logo {
+    width: 180px;
+    height: 50px;
+    margin-right: 60px;
+    color: black;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav {
+    background-color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-link {
+    color: black;
+    text-decoration: none;
+    margin-right: 10px;
+    transition: color 0.2s ease;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.nav-link:hover {
+    color: #ccc;
+}
+
+/* about us */
+.section2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 2%;
+    margin-bottom: 10%;
+}
+
+.about-us {
+    height: 90vh;
+    width: 80vw;
+    background-image: url("../images/main_image.png");
+    display: flex;
+    justify-content: center;
+}
+
+.about-us .about {
+    display: flex;
+    align-items: baseline;
+    margin-top: 2%;
+}
+
+.about-us .smaller {
+    width: 90%;
+}
+
+.about-us .about .big {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.about-us .about .small {
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.about-us .images {
+    display: flex;
+    justify-content: center;
+    margin-top: 3%;
+    margin-bottom: 5%;
+}
+
+.about-us .images img {
+    width: 82%;
+}
+
+/* Paragraph */
+.about-us .text1 p {
+    color: white;
+    font-size: 1.1rem;
+}
+
+.about-us .text2 {
+    margin-top: 9%;
+}
+
+.about-us .text2 p {
+    color: white;
+    font-size: 1.1rem;
+}
+
+.about-us .radios {
+    align-self: flex-end;
+    margin-top: 15%;
+}
+
+.about-us .radios .arrows {
+    display: flex;
+}
+
+.about-us .radios a {
+    text-decoration: none;
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 900;
+    margin: 0px 15%;
+}
+
+.about-us .radios {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-us .radios .radio input {
+    accent-color: black;
+}
+
+/* Media queries for smaller screens */
+@media (max-width: 500px) {
+    .toggle-menu, .hamburger {
+        display: block;
+        z-index: 3;
+    }
+
+    .logo {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        width: 120px;
+        height: 60px;
+    }
+
+    .head {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        right: 0;
+        background: #cc373c;
+        width: 300px;
+        height: 100%;
+        padding-top: 65px;
+        z-index: 1;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .head a, .head a:hover {
+        padding: 30px;
+        font-size: 1rem;
+        box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1);
+    }
+
+    nav input:checked ~ .head {
+        transform: translateX(0);
+    }
+
+    footer {
+        padding: 20px 10px;
+        height: auto;
+    }
+
+    footer .container {
+        padding: 0 10px;
+        max-width: 100%;
+    }
+
+    footer .row {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .footerlogo {
+        width: 200px;
+        height: auto;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    footer h5 {
+        margin-bottom: 10px;
+    }
+
+    footer ul {
+        margin: 0;
+        padding: 0;
+    }
+
+    footer li {
+        margin-bottom: 10px;
+    }
+
+    footer a {
+        font-size: 14px;
+    }
+
+    footer .copyright {
+        margin-left: 0px;
+        margin-top: 20px;
+        font-size: 12px;
+        text-align: center;
+        padding-top: 10px;
+    }
+
+    .contacts, footer .Links {
+        margin-left: 0px;
+        margin-top: 50px;
+    }
+}
