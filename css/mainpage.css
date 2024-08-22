@@ -224,10 +224,10 @@
   .bgimage {
       width: 1500px;
       height: auto;
-      ;
       background-size: contain;
       background-position: center;
       background-repeat: no-repeat;
+      margin-bottom : 60px;
   }
 
   @font-face {
@@ -241,9 +241,7 @@
       display: inline-block;
       width: 50%;
       margin-bottom: auto;
-      /* Push h2 to the top */
       z-index: 2;
-      /* Ensure h2 is above the background */
       font-family: 'Archivo black';
   }
 
@@ -251,7 +249,7 @@
 
   .round-button {
       display: inline-block;
-      padding: 10px 20px;
+      padding: 15px 25px;
       background-color: #cc373c;
       color: #ffffff;
       font-size: 16px;
@@ -260,8 +258,8 @@
       border: none;
       transition: background-color 0.3s ease, transform 0.3s ease;
       z-index: 2;
-      /* Ensure buttons are above the background */
       font-family: 'Avenir LT Std 55 Roman';
+      margin-bottom: 20px;;
   }
 
   .round-button:hover {
@@ -275,16 +273,13 @@
       align-items: center;
       justify-content: center;
       gap: 30px;
-      margin-bottom: 20px;
+      margin-bottom: 40px;
       margin-top: 20px;
       z-index: 2;
       /* Ensure button container is above the background */
   }
 
-
-
   /* Section: Why Choose Us */
-
 
   .container {
       width: 80%;
@@ -292,18 +287,11 @@
       padding: 30px 0;
   }
 
-  /* 
-h1 {
-    font-size: 14px; /* Adjust the size as needed 
-    margin-top: 10px;
-} */
-
   h2 {
       font-size: 52px;
-      /* Adjust the size as needed */
       color: #cc373c;
       font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-      margin-top: 20px;
+      /* margin-top: 20px; */
       text-align: center;
       text-decoration: underline;
       /* Add underline */
@@ -330,7 +318,6 @@ h1 {
       display: flex;
       justify-content: center;
       align-items: flex-start;
-      /* Align items to the start */
   }
 
   .card img {
@@ -405,7 +392,7 @@ h1 {
       margin: 10px;
       flex: 0 0 70%;
       color: black;
-      border-left: 5px solid #f77f00;
+      border-left: 5px solid #ca373c;
       border-radius: 5px;
       font-family: 'Avenir LT Std 55 Roman';
   }
@@ -428,16 +415,16 @@ h1 {
       font-family: 'Avenir LT Std 55 Roman';
   }
 
-  .value h2::after,
+  /* .value h2::after,
   .team h2::after,
   .quote h2::after {
       content: "";
       width: 50px;
       height: 3px;
-      background-color: #f77f00;
+      background-color: #ca373c;
       display: block;
       margin: 10px auto;
-  }
+  } */
 
   .value ul {
       list-style: none;
@@ -589,7 +576,7 @@ h1 {
   }
 
   footer {
-      background-color: black;
+      background-color: #5B5A50;
       color: #fff;
       padding: 20px;
       clear: both;
@@ -679,7 +666,6 @@ h1 {
       overflow: hidden;
       position: relative;
       margin: 0 auto;
-      border: 3px solid black;
       border-radius: 15px;
   }
 
@@ -708,7 +694,7 @@ h1 {
       position: absolute;
       top: 50%;
       transform: translateY(-50%);
-      background-color: rgba(0, 0, 0, 0.5);
+      background-color: rgba(197, 192, 192, 0.5);
       border: none;
       color: white;
       font-size: 18px;
