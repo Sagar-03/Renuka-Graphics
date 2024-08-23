@@ -1,9 +1,25 @@
 * {
     padding: 0;
     margin: 0;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
     box-sizing: border-box;
 }
+body{
+    font-family: 'Avenir LT Std 55 Roman';
+}
+@font-face {
+    font-family: 'Archivo black';
+    src: url('../font/ArchivoBlack.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Avenir LT Std 55 Roman';
+    src: url('../font/AvenirLTStd.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 
 html, body {
     margin: 0;
@@ -169,6 +185,7 @@ nav input:checked ~ label .hamburger::after {
     font-size: 2.5rem;
     margin-bottom: 37px;
     text-decoration: underline;
+    font-family: 'Archivo Black';
 }
 
 main {
@@ -372,7 +389,7 @@ main .image {
 }
 
 footer {
-    background-color: black;
+    background-color: #5b5a50;
     color: #fff;
     padding: 0px;
     clear: both;

@@ -1,13 +1,28 @@
 * {
     padding: 0;
     margin: 0;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
     box-sizing: border-box;
 }
 
 html, body {
     margin: 0;
     padding: 0;
+}
+body{
+    font-family: 'Avenir LT Std 55 Roman';
+}
+@font-face {
+    font-family: 'Archivo black';
+    src: url('../font/ArchivoBlack.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Avenir LT Std 55 Roman';
+    src: url('../font/AvenirLTStd.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
 }
 
 .logo {
@@ -168,7 +183,8 @@ nav input:checked ~ label .hamburger::after {
 .heading h1 {
     font-size: 2.5rem;
     margin-bottom: 37px;
-    text-decoration: underline;
+    text-decoration: underline;/
+    font-family: 'Archivo black';
 }
 
 main {

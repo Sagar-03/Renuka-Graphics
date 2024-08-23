@@ -1,8 +1,20 @@
 /* General Styles */
 body {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin: 0;
     padding: 0;
+    font-family: 'Avenir LT Std 55 Roman';
+}
+@font-face {
+    font-family: 'Archivo black';
+    src: url('../font/ArchivoBlack.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Avenir LT Std 55 Roman';
+    src: url('../font/AvenirLTStd.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
 }
 
 /* Header */
@@ -85,7 +97,9 @@ nav {
     align-items: center;
     justify-content: space-between; /* Distribute items evenly */
     width: 100%;
+    font-family: 'Avenir LT Std 55 Roman';
     height: 110px;
+    text-decoration: none;
 }
 
 .hamburger {
@@ -150,7 +164,6 @@ nav input:checked ~ label .hamburger::after {
 
 .nav-link {
     color: black;
-    text-decoration: underline;
     margin: 0 10px; /* Adjust spacing between nav links */
     transition: color 0.2s ease;
     font-weight: bold;
@@ -164,6 +177,7 @@ nav input:checked ~ label .hamburger::after {
 .heading h1 {
     font-size: 2.5rem;
     margin-bottom: 37px;
+    color: #cc373c;
     text-decoration: underline;
 }
 
@@ -174,32 +188,34 @@ nav input:checked ~ label .hamburger::after {
     background-color: #fff;
     box-shadow: 0 4px 8px rgba(14, 13, 13, 0.1);
     border-radius: 10px;
-    box-sizing: border-box; /* Add this line */
+    box-sizing: border-box; 
 }
 
 .about h1 {
-    font-size: 42px;
-    color: black;
+    font-size: 40px;
+    color: #cc373c;
     text-align: center;
     margin-bottom: 20px;
   text-decoration: underline;
     letter-spacing: 2px;
+    font-family: 'Archivo Black';
 }
 
 .intro p {
-    font-size: 20px;
+    font-size: 22px;
     margin-bottom: 30px;
     text-align: center;
     line-height: 1.8;
-    color: #cc373c;;
+    color: black;
 }
 
 .values h2, .team h2, .quote h2 {
     font-size: 30px;
-    color: black;
+    color: #cc373c;
     margin-top: 40px;
     margin-bottom: 20px;
     text-align: center;
+    font-family: 'Archivo Black';
     position: relative;
 }
 
@@ -238,11 +254,12 @@ nav input:checked ~ label .hamburger::after {
 
 .value h2, .team h2, .quote h2 {
     font-size: 30px;
-    color: black;
+    color: #cc373c;
     margin-top: 40px;
     margin-bottom: 20px;
     text-align: center;
     position: relative;
+    font-family: 'Archivo Black';
 }
 
 .value h2::after, .team h2::after, .quote h2::after {
@@ -250,8 +267,10 @@ nav input:checked ~ label .hamburger::after {
     width: 50px;
     height: 3px;
     background-color: #cc373c;
+color: #cc373c;
     display: block;
     margin: 10px auto;
+    font-family: 'Archivo Black';
 }
 
 .value ul {
@@ -273,7 +292,7 @@ nav input:checked ~ label .hamburger::after {
 }
 
 .value li strong {
-    color: black;
+    color: #cc373c;
     font-size: 18px;
 }
 
@@ -286,7 +305,7 @@ nav input:checked ~ label .hamburger::after {
 .quote blockquote {
     font-size: 22px;
     font-style: italic;
-    color: #cc373c;;
+    color: black;
     margin: 20px 0;
     text-align: center;
     padding: 20px;

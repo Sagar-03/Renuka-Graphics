@@ -1,7 +1,20 @@
 /* header */
 body{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Avenir LT Std 55 Roman';
 }
+@font-face {
+    font-family: 'Archivo black';
+    src: url('../font/ArchivoBlack.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Avenir LT Std 55 Roman';
+    src: url('../font/AvenirLTStd.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 .logo {
     width: 180px;
     height: 70px;
@@ -143,6 +156,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-family: 'Avenir LT Std 55 Roman';
 }
 
 .nav-link {
@@ -178,7 +192,7 @@ nav {
     margin: 15px 7.5px; /* Adjust the left and right margins as needed */
     overflow: hidden; /* Ensure the image doesn't overflow */
     transition: all 0.3s ease; /* Animate the changes */
-    border: 1px solid black; /* Add a border to the images */
+    /* border: 1px solid black; Add a border to the images */
 }
 
 .box1 {
@@ -192,7 +206,7 @@ nav {
     margin: 15px 7.5px; /* Adjust the left and right margins as needed */
     overflow: hidden; /* Ensure the image doesn't overflow */
     transition: all 0.3s ease; /* Animate the changes */
-    border: 1px solid black; /* Add a border to the images */
+    /* border: 1px solid black; Add a border to the images */
     display: none;
 }
 
@@ -215,7 +229,7 @@ nav {
     padding: 5px 10px; /* Optional: Add some padding */
     border-radius: 3px; /* Optional: Add rounded corners */
     font-size: 24px; /* Increase font size */
-    font-family: sans-serif; /* Change the font */
+    font-family: 'Avenir LT Std 55 Roman';
     font-weight: bold; /* Make the text bolder */
     line-height: 1.2; /* Adjust line height to separate the words */
     word-break: break-word; /* Ensure long words break onto the next line */
@@ -242,6 +256,7 @@ nav {
     text-align: center; /* Center the heading horizontally */
     color: #cc373c;
     text-decoration: underline;
+    font-family: 'Archivo Black';
 }
 /* footer*/
 
@@ -261,6 +276,7 @@ nav {
   }
 
   footer {
+    
       background-color: #5B5A50;
       color: #fff;
       padding: 20px;
