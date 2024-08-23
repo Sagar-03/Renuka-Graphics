@@ -227,7 +227,7 @@ nav input:checked ~ label .hamburger::after {
     margin: 10px;
     flex: 0 0 70%;
     color:black;
-    border-left: 5px solid #f77f00;
+    border-left: 5px solid #cc373c;
     border-radius: 5px;
 }
 
@@ -249,7 +249,7 @@ nav input:checked ~ label .hamburger::after {
     content: "";
     width: 50px;
     height: 3px;
-    background-color: #f77f00;
+    background-color: #cc373c;
     display: block;
     margin: 10px auto;
 }
@@ -268,7 +268,7 @@ nav input:checked ~ label .hamburger::after {
     padding: 20px;
     margin: 10px;
     flex: 0 0 70%;
-    border-left: 5px solid #f77f00;
+    border-left: 5px solid #cc373c;
     border-radius: 5px;
 }
 
@@ -291,7 +291,7 @@ nav input:checked ~ label .hamburger::after {
     text-align: center;
     padding: 20px;
     background-color: #f1f1f1;
-    border-left: 5px solid #f77f00;
+    border-left: 5px solid #cc373c;
     border-radius: 5px;
 }
 /* footer */
