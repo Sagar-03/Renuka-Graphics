@@ -9,7 +9,65 @@ html, body {
     margin: 0;
     padding: 0;
 }
+.whatsapp-icon {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    background-color: #25D366;
+    color: white;
+    font-size: 30px;
+    padding: 15px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
 
+.whatsapp-icon a {
+    color: white;
+    text-decoration: none;
+}
+
+.whatsapp-icon:hover {
+    background-color: #128C7E;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content,
+.dropdown:focus-within .dropdown-content {
+    display: block;
+}
+
+.head .nav-link:hover,
+.head .nav-link:focus {
+    color: #007bff;
+    /* Adjust hover color as needed */
+}
 .logo {
     width: 180px;
     height: 70px;
@@ -297,32 +355,31 @@ main .image {
 
 /* footer */
 
-.footerlogo {
+ /* footer*/
+
+ .footerlogo {
     display: block;
-    width: 250px;
-    height: 80px;
+    width: 240px;
+    height: 85px;
     margin-right: auto;
     margin-bottom: 30px;
-    margin-left: 20px;
-    margin-top: 30px;
+    margin-left: 10px;
 }
 
 .logo-container p {
     max-width: 300px;
-    margin-left: 20px;
 }
 
 footer {
-    background-color: black;
+    background-color: #5B5A50;
     color: #fff;
-    padding: 0px;
+    padding: 20px;
     clear: both;
-    width: 100%;
-    height: 400px;
+    font-family: 'Avenir LT Std 55 Roman';
 }
 
 footer .container {
-    max-width: 100%;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
 }
@@ -330,21 +387,34 @@ footer .container {
 footer .row {
     display: flex;
     align-items: flex-start;
+    /* Aligns items to the start of the container */
     justify-content: space-between;
+    /* Distributes space between items */
+
 }
 
 footer .Links {
+
     margin-left: auto;
     display: flex;
     flex-direction: column;
     margin-left: 150px;
-    margin-top: 30px;
 }
 
+/* footer .links2 {
+  
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  margin-left: 150px;
+} */
+
 footer h5 {
+
     font-weight: bold;
     margin-top: 0;
     font-size: 20px;
+    /* Adjust this value to increase or decrease the font size */
 }
 
 footer ul {
@@ -372,7 +442,7 @@ footer .copyright {
     display: flex;
     align-items: center;
     margin-left: 450px;
-    margin-top: 80px;
+    margin-top: 60px;
     font-size: 14px;
     text-align: center;
     padding-top: 20px;
@@ -382,8 +452,8 @@ footer .copyright {
     margin-left: 200px;
     display: flex;
     flex-direction: column;
-    margin-top: 30px;
 }
+
 
 
 

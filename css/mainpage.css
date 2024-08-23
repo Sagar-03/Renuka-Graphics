@@ -49,6 +49,27 @@
       /* This will make the link color the same as the surrounding text */
   }
 
+/* Define the keyframes for the sliding animation */
+/* Define the keyframes for the continuous sliding animation */
+@keyframes slideIn {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    50% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+}
+
+/* Apply the continuous animation to the h2 element */
+.slide-in {
+    animation: slideIn 3s linear infinite;
+}
 
   .logo {
       width: 180px;
@@ -222,7 +243,7 @@
   }
 
   .bgimage {
-      width: 1500px;
+      width: 100vw;
       height: auto;
       background-size: contain;
       background-position: center;
