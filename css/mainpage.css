@@ -68,7 +68,7 @@
 
 /* Apply the continuous animation to the h2 element */
 .slide-in {
-    animation: slideIn 3s linear infinite;
+    animation: slideIn 8s linear infinite;
 }
 
   .logo {
