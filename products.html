@@ -54,7 +54,11 @@
             <a href="contact.html" class="nav-link">Contact Us</a>
             <a href="Broucher.pdf" class="nav-link" target="_blank" download="Broucher.pdf">Download Brochure</a>
         </div>
-
+        <div class="search-container">
+            <div class="search-icon" id="search-icon">&#128269;</div>
+            <input type="text" id="search-input" placeholder="Search products..." autocomplete="off">
+            <div id="suggestions"></div>
+        </div>
     </nav>
 
     
@@ -161,7 +165,64 @@
             </div>
         </div>
     </footer>
+<script>  // search box
+    // <!--Search box js-->
+    const products = {
+"hang tag": "HangTag.html",
+"printed label": "PrintedLabel.html",
+"woven label": "Wovenlabel.html",
+"tag seal": "Tagseal.html",
+"paper sticker": "Papersticker.html",
+"packaging box": "Packagingbox.html",
+"header card": "Headercard.html",
+"heat transfer sticker": "Heattranfersticker.html",
+"brochure": "Broucher.html",
+"calendar": "Calendar.html",
+"certificate": "Certificate.html",
+"flyer": "Flyer.html",
+"id card": "IDcard.html",
+"poster": "Poster.html"
+};
 
+document.getElementById('search-icon').addEventListener('click', function() {
+document.querySelector('.search-container').classList.toggle('expanded');
+document.getElementById('search-input').focus();
+});
+
+document.getElementById('search-input').addEventListener('input', function() {
+const query = this.value.toLowerCase();
+const suggestions = document.getElementById('suggestions');
+suggestions.innerHTML = '';
+
+if (query) {
+  Object.keys(products).forEach(product => {
+      if (product.includes(query)) {
+          const suggestion = document.createElement('div');
+          suggestion.textContent = product;
+          suggestion.addEventListener('click', function() {
+              window.location.href = products[product];
+          });
+          suggestions.appendChild(suggestion);
+      }
+  });
+  suggestions.style.display = 'block';
+} else {
+  suggestions.style.display = 'none';
+}
+});
+
+document.getElementById('search-input').addEventListener('keypress', function(e) {
+if (e.key === 'Enter') {
+  const query = this.value.toLowerCase();
+  const url = products[query];
+  
+  if (url) {
+      window.location.href = url;
+  } else {
+      alert('Product not found');
+  }
+}
+});</script>
 </body>
 
  </html>

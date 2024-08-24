@@ -4,6 +4,56 @@
     /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
     box-sizing: border-box;
 }
+/* Search bar styles */
+.search-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.search-icon {
+    cursor: pointer;
+    font-size: 20px;
+    padding: 10px;
+}
+
+#search-input {
+    width: 0;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: width 0.4s ease;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.search-container.expanded #search-input {
+    width: 200px;
+    opacity: 1;
+    visibility: visible;
+}
+
+#suggestions {
+    position: absolute;
+    top: 35px;
+    left: 0;
+    background-color: white;
+    border: 1px solid #ccc;
+    width: 100%;
+    max-height: 200px;
+    overflow-y: auto;
+    z-index: 1000;
+    display: none;
+}
+
+#suggestions div {
+    padding: 10px;
+    cursor: pointer;
+}
+
+#suggestions div:hover {
+    background-color: #f1f1f1;
+}
 
 html, body {
     margin: 0;
